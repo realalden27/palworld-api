@@ -1,4 +1,7 @@
 # palworld-api
+[![Crates.io](https://img.shields.io/crates/v/palworld-api.svg)](https://crates.io/crates/palworld-api)
+[![Documentation](https://docs.rs/palworld-api/badge.svg)](https://docs.rs/palworld-api)
+[![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE-MIT)
 
 A Rust client library for interacting with the Palworld dedicated server REST API. [Palworld Dedicated Server REST API](https://docs.palworldgame.com/api/rest-api/palwold-rest-api/).
 
