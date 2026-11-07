@@ -1,0 +1,62 @@
+[package]
+name = "palworld-api"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "A Rust client library for interacting with the Palworld dedicated server REST API."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/realalden27/palworld-api"
+homepage = "https://github.com/realalden27/palworld-api"
+documentation = "https://docs.rs/palworld-api"
+readme = "README.md"
+keywords = ["palworld", "rest-api", "game-server", "async", "client"]
+categories = ["api-bindings", "asynchronous", "game-development"]
+include = [
+    "/src/**",
+    "/examples/**",
+    "/tests/**",
+    "/LICENSE-*",
+    "/README.md",
+    "/CHANGELOG.md",
+    "/Cargo.toml",
+]
+
+[features]
+default = ["rustls-tls"]
+rustls-tls = ["reqwest/rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+
+[dependencies]
+reqwest = { version = "0.12", default-features = false, features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+zeroize = "1.8"
+
+[dev-dependencies]
+tokio = { version = "1.43", features = ["macros", "rt-multi-thread", "net", "io-util", "time"] }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+unreachable_pub = "warn"
+unused_imports = "deny"
+unused_must_use = "deny"
+unused_mut = "deny"
+unused_variables = "deny"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+todo = "deny"
+unimplemented = "deny"
+unreachable = "deny"
+indexing_slicing = "deny"
+wildcard_imports = "deny"
+dbg_macro = "deny"
+cognitive_complexity = "deny"
