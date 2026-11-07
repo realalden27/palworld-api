@@ -1,6 +1,6 @@
 # palworld-api
 
-Simple, strongly-typed asynchronous Rust client for the official [Palworld Dedicated Server REST API (`v1.0.4`)](https://docs.palworldgame.com/api/rest-api/palwold-rest-api/).
+A Rust client library for interacting with the Palworld dedicated server REST API. [Palworld Dedicated Server REST API](https://docs.palworldgame.com/api/rest-api/palwold-rest-api/).
 
 ---
 
