@@ -8,12 +8,7 @@ A Rust client library for interacting with the Palworld dedicated server REST AP
 ---
 
 ## Highlights
-
-- **Simple Single-Crate Design** — One lightweight `PalworldClient` (`Clone + Send + Sync`) backed by `reqwest`'s connection pool with zero macro magic or actor boilerplate.
 - **Complete Official API Coverage** — Supports all **12 `/v1/api` endpoints**, including **`GET /v1/api/game-data`** (`-enable-gamedata-api` live world actor snapshots).
-- **Resilient Against Palworld Server Quirks** — Handles empty/plain-text `200 OK` bodies on `POST` commands, transient `null` fields on joining/crossplay players, string-or-boolean `"IsActive"` flags, and forward-compatible `ServerSettings` keys across game updates.
-- **Zero-Panic & Credential-Safe (`#![forbid(unsafe_code)]`)** — Admin passwords are held in a `zeroize`-backed `SecretPassword` redacted as `[REDACTED]` in `Debug`/`Display` output.
-
 ---
 
 ## Installation
