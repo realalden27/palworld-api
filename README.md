@@ -117,3 +117,9 @@ Licensed under either of:
 - MIT License ([LICENSE-MIT](LICENSE-MIT))
 
 at your option.
+
+---
+
+## Disclaimer
+
+This is a fan-made, unofficial project created by the community. It is not affiliated with, endorsed by, or sponsored by Pocketpair, Inc. "Palworld" and related names and marks are trademarks of Pocketpair, Inc.
